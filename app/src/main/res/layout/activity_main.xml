@@ -12,12 +12,12 @@
           android:layout_weight="1">
 
         <ScrollView
-              style="@style/Widget.SampleMessageTile"
+
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
             <TextView
-                  style="@style/Widget.SampleMessage"
+
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:paddingLeft="@dimen/horizontal_page_margin"

@@ -23,12 +23,12 @@
 
     <item
         android:id="@+id/insecure_connect_scan"
-        android:showAsAction="never"
+        android:showAsAction="ifRoom"
         android:title="@string/insecure_connect"/>
 
     <item
         android:id="@+id/discoverable"
-        android:showAsAction="never"
+        android:showAsAction="ifRoom"
         android:title="@string/discoverable"/>
 
 </menu>
