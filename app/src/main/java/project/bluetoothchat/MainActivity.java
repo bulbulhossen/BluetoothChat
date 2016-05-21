@@ -1,6 +1,7 @@
 
 package project.bluetoothchat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
@@ -41,9 +42,11 @@ public class MainActivity extends SampleActivityBase {
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
+/*
         MenuItem logToggle = menu.findItem(R.id.menu_toggle_log);
         logToggle.setVisible(findViewById(R.id.sample_output) instanceof ViewAnimator);
         logToggle.setTitle(mLogShown ? R.string.sample_hide_log : R.string.sample_show_log);
+*/
 
         return super.onPrepareOptionsMenu(menu);
     }
@@ -51,6 +54,10 @@ public class MainActivity extends SampleActivityBase {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
+            case R.id.help:{
+                Intent intent = new Intent(MainActivity.this,Help.class);
+                startActivity(intent);
+            }
             case R.id.menu_toggle_log:
                 mLogShown = !mLogShown;
                 ViewAnimator output = (ViewAnimator) findViewById(R.id.sample_output);

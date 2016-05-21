@@ -353,6 +353,10 @@ public class BluetoothChatFragment extends Fragment {
         mChatService.connect(device, secure);
     }
 
+
+
+
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.bluetooth_chat, menu);
